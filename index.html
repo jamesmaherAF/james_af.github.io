@@ -13,13 +13,15 @@ o.src="https://websdk.appsflyer.com?"+(c.length>0?"st="+c.split(",").sort().join
 p.parentNode.insertBefore(o,p)}(window,document,"script",0,"AF","pba","ca8f732e-4184-4a9e-ab2b-92986e1b83a7")
 </script>
 
+  
+          <script>window.onload = function(){
+            AF('pba', 'event', {eventType: 'EVENT', eventCategory: 'conversion',eventName: 'subscription', eventLabel: 'newsletters'});
+        }
+        </script>
 </HEAD>
 
 <BODY BGCOLOR="FFFFFF">
-<script>
-// purchase event of shoes with associated revenue
-AF('pba', 'event', {eventType: 'EVENT', eventName: 'purchase', eventLabel: 'shoes',  eventRevenue: 12});
-  </script>
+
 <HR>
 
 <a href="http://somegreatsite.com">Link Name</a>
